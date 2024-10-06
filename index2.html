@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Mis Géneros de Música Favoritos_files/main.css">
+    <title>Mis Géneros de Música Favoritos</title>
+    <style>
+        .informacion-musica {
+            display: flex;
+            flex-wrap: wrap; /* Para que los elementos se ajusten en pantallas más pequeñas */
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .item-musica {
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            width: 200px;
+            margin: 10px; /* Espaciado entre elementos */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil */
+            transition: transform 0.3s; /* Efecto al pasar el ratón */
+        }
+        .item-musica:hover {
+            transform: scale(1.05);
+        }
+        .item-musica img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover; /* Mantiene las proporciones de la imagen */
+            border-radius: 50%; /* Hace la imagen circular */
+            margin-bottom: 10px;
+        }
+        .item-musica h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #007bff;
+        }
+        .item-musica p {
+            margin: 5px 0 15px 0;
+            color: #555;
+        }
+        .item-musica button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .item-musica button:hover {
+            background-color: #0056b3;
+        }
+        header {
+            background-color: #007bff;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        header button {
+            background-color: white;
+            color: #007bff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        header button:hover {
+            background-color: #f0f0f0;
+        }
+        main {
+            padding: 40px 20px;
+        }
+        main h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+            color: #333;
+        }
+    </style>
+<style>
+        @font-face {
+            font-family: 'NotoSans_online_security'; 
+            src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/assets/fonts/noto-sans-regular.woff);
+        }
+
+        @font-face {
+            font-family: 'NotoSans_medium_online_security'; 
+            src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/assets/fonts/noto-sans-medium.ttf);
+        }
+
+        @font-face {
+            font-family: 'NotoSans_bold_online_security'; 
+            src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/assets/fonts/noto-sans-bold.woff);
+        }
+
+        @font-face {
+            font-family: 'NotoSans_semibold_online_security'; 
+            src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/assets/fonts/noto-sans-semibold.ttf);
+        }
+</style></head>
+<body>
+
+    <!-- Incluir la barra de navegación -->
+    <nav style="background-color: #007bff; padding: 10px;">
+    <a href="http://localhost:3000/" style="color: white; margin-right: 20px;">Inicio</a>
+    <a href="http://localhost:3000/pag2" style="color: white;">Página 2</a>
+</nav>
+
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Mis Géneros de Música Favoritos</h1>
+        <p>Descubre los ritmos que me apasionan</p>
+        <button>Explorar Más</button>
+    </header>
+
+    <!-- Información de Géneros Musicales -->
+    <main>
+        <h2>Mis Géneros Musicales</h2>
+        <div class="informacion-musica">
+            <div class="item-musica">
+                <img src="./Mis Géneros de Música Favoritos_files/regueton.jpg" alt="Reguetón">
+                <h3>Reguetón</h3>
+                <p>Ritmos urbanos llenos de energía.</p>
+                <button>Escuchar</button>
+            </div>
+            <div class="item-musica">
+                <img src="./Mis Géneros de Música Favoritos_files/tropical.jpg" alt="Tropical">
+                <h3>Tropical</h3>
+                <p>Sonidos cálidos y festivos.</p>
+                <button>Escuchar</button>
+            </div>
+            <div class="item-musica">
+                <img src="./Mis Géneros de Música Favoritos_files/ranchera.jpg" alt="Ranchera">
+                <h3>Ranchera</h3>
+                <p>Tradición y sentimiento mexicano.</p>
+                <button>Escuchar</button>
+            </div>
+            <div class="item-musica">
+                <img src="./Mis Géneros de Música Favoritos_files/electronica.jpg" alt="Electrónica">
+                <h3>Electrónica</h3>
+                <p>Sonidos futuristas y vibrantes.</p>
+                <button>Escuchar</button>
+            </div>
+        </div>
+    </main>
+
+
+
+<div style="display: none" class="ubey-RecordingScreen-count-down ubey-RecordingScreen-count-down-container">
+    <style>
+        .ubey-RecordingScreen-count-down-container {
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            left: 0;
+            z-index: 9999999999999;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .ubey-RecordingScreen-count-down-content {
+            position: absolute;
+            display: flex;
+            top: 50%;
+            left: 50%;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            height: 15em;
+            width: 15em;
+            transform: translate(-50%, -100%);
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+        }
+
+        #ubey-RecordingScreen-count-count {
+            font-size: 14em;
+            transform: translateY(-2%);
+        }
+    </style>
+    <div class="ubey-RecordingScreen-count-down-content">
+        <span id="ubey-RecordingScreen-count-count"></span>
+    </div>
+</div></body></html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://localhost:3000/pag2 -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Mis Canciones Favoritas_files/main.css">
+    <title>Mis Canciones Favoritas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #007bff;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        header button {
+            background-color: white;
+            color: #007bff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        header button:hover {
+            background-color: #f0f0f0;
+        }
+        main {
+            padding: 40px 20px;
+        }
+        main h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #333;
+        }
+        .lista-canciones {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+        }
+        .item-cancion {
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s;
+        }
+        .item-cancion:hover {
+            transform: scale(1.02);
+        }
+        .item-cancion img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .item-cancion div {
+            flex: 1;
+        }
+        .item-cancion h3 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #007bff;
+        }
+        .item-cancion p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .item-cancion button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .item-cancion button:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 600px) {
+            .item-cancion {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .item-cancion img {
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+            .item-cancion button {
+                align-self: stretch;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+<style>
+        @font-face {
+            font-family: 'NotoSans_online_security'; 
+            src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/assets/fonts/noto-sans-regular.woff);
+        }
+
+        @font-face {
+            font-family: 'NotoSans_medium_online_security'; 
+            src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/assets/fonts/noto-sans-medium.ttf);
+        }
+
+        @font-face {
+            font-family: 'NotoSans_bold_online_security'; 
+            src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/assets/fonts/noto-sans-bold.woff);
+        }
+
+        @font-face {
+            font-family: 'NotoSans_semibold_online_security'; 
+            src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/assets/fonts/noto-sans-semibold.ttf);
+        }
+</style></head>
+<body>
+
+    <!-- Incluir la barra de navegación -->
+    <nav style="background-color: #007bff; padding: 10px;">
+    <a href="http://localhost:3000/" style="color: white; margin-right: 20px;">Inicio</a>
+    <a href="http://localhost:3000/pag2" style="color: white;">Página 2</a>
+</nav>
+
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Mis Canciones Favoritas</h1>
+        <p>Disfruta de las canciones que más me gustan</p>
+        <button>Explorar Más</button>
+    </header>
+
+    <!-- Lista de Canciones -->
+    <main>
+        <h2>Canciones Destacadas</h2>
+        <ul class="lista-canciones">
+            <li class="item-cancion">
+                <img src="./Mis Canciones Favoritas_files/amor_de_dos.jpg" alt="Amor de Dos - J Balvin y Natti Natasha">
+                <div>
+                    <h3>Amor de Dos</h3>
+                    <p>J Balvin &amp; Natti Natasha</p>
+                </div>
+                <button>Escuchar</button>
+            </li>
+            <li class="item-cancion">
+                <img src="./Mis Canciones Favoritas_files/vente_paca.jpg" alt="Vente Pa&#39; Ca - Ricky Martin">
+                <div>
+                    <h3>Vente Pa' Ca</h3>
+                    <p>Ricky Martin</p>
+                </div>
+                <button>Escuchar</button>
+            </li>
+            <li class="item-cancion">
+                <img src="./Mis Canciones Favoritas_files/contentoso.jpg" alt="contentoso - Luis Alfonso">
+                <div>
+                    <h3>contentoso</h3>
+                    <p>Luis Alfonso</p>
+                </div>
+                <button>Escuchar</button>
+            </li>
+            <li class="item-cancion">
+                <img src="./Mis Canciones Favoritas_files/levels.jpg" alt="Levels - Avicii">
+                <div>
+                    <h3>Levels</h3>
+                    <p>Avicii</p>
+                </div>
+                <button>Escuchar</button>
+            </li>
+            <!-- Agrega más canciones según necesites -->
+        </ul>
+    </main>
+
+
+
+<div style="display: none" class="ubey-RecordingScreen-count-down ubey-RecordingScreen-count-down-container">
+    <style>
+        .ubey-RecordingScreen-count-down-container {
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            left: 0;
+            z-index: 9999999999999;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .ubey-RecordingScreen-count-down-content {
+            position: absolute;
+            display: flex;
+            top: 50%;
+            left: 50%;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            height: 15em;
+            width: 15em;
+            transform: translate(-50%, -100%);
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+        }
+
+        #ubey-RecordingScreen-count-count {
+            font-size: 14em;
+            transform: translateY(-2%);
+        }
+    </style>
+    <div class="ubey-RecordingScreen-count-down-content">
+        <span id="ubey-RecordingScreen-count-count"></span>
+    </div>
+</div></body></html>

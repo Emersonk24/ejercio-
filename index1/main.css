@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.producto {
+    text-align: center;
+}
+
+.producto img {
+    width: 150px;
+    height: 150px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff; /* Cambiado a azul para reflejar el nuevo tema */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Color más oscuro para el hover */
+}
+
+/* Estilos para "Sobre Nosotros" */
+section {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #007bff; /* Cambiado a azul para reflejar el nuevo tema */
+    text-align: center;
+}
+
+p, ul {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+header {
+    margin-bottom: 30px;
+    background-color: #007bff; /* Cambiado a azul para el encabezado */
+    padding: 20px;
+    color: white; /* Asegurando que el texto sea blanco en el encabezado */
+}
